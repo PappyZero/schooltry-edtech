@@ -1,61 +1,153 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# SchoolTry EdTech Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)](https://vuejs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-## About Laravel
+SchoolTry is an educational technology platform that leverages AI to enhance the learning experience. This application allows students to ask questions about their lessons and receive AI-generated responses, making learning more interactive and engaging.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Interactive Lessons**: Browse and view educational content
+- **AI-Powered Q&A**: Get instant answers to your questions
+- **User Authentication**: Secure login and registration system
+- **Admin Dashboard**: Manage lessons and content with ease
+- **Responsive Design**: Works on desktop and mobile devices
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🤖 AI Integration
 
-## Learning Laravel
+This application integrates with the following AI services:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Hugging Face** - For natural language processing and question-answering capabilities
+- **OpenRouter** - For accessing various AI models including GPT-3.5 and Claude
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+The AI analyzes lesson content and provides contextual, accurate responses to student questions, enhancing the learning experience.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Tech Stack
 
-## Laravel Sponsors
+- **Backend**: Laravel 10.x
+- **Frontend**: Vue.js 3, Inertia.js
+- **Styling**: Tailwind CSS
+- **Database**: SQLite (can be configured for MySQL/PostgreSQL)
+- **AI Services**: Hugging Face, OpenRouter
+- **Deployment**: Ready for Laravel Forge, Vercel, or traditional hosting
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 📋 Prerequisites
 
-### Premium Partners
+- PHP 8.1 or higher
+- Composer
+- Node.js 16+ & NPM
+- SQLite (or MySQL/PostgreSQL)
+- Hugging Face API Key (optional)
+- OpenRouter API Key (optional)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 🚀 Installation
 
-## Contributing
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/PappyZero/schooltry-edtech.git
+   cd schooltry-edtech
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
 
-## Code of Conduct
+3. **Install JavaScript dependencies**
+   ```bash
+   npm install
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Create and configure .env file**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-## Security Vulnerabilities
+5. **Configure database**
+   ```sqlite
+   touch database/database.sqlite
+   ```
+   Update `.env` with your database configuration.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. **Run migrations and seeders**
+   ```bash
+   php artisan migrate --seed
+   ```
 
-## License
+7. **Compile assets**
+   ```bash
+   npm run build
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8. **Start the development server**
+   ```bash
+   php artisan serve
+   ```
+
+9. **Access the application**
+   Open your browser and visit: `http://localhost:8000`
+
+## 🔐 Default Admin Account
+
+- **Email**: admin@example.com
+- **Password**: password
+
+## 🌐 Environment Variables
+
+Create a `.env` file and configure the following variables:
+
+```env
+APP_NAME="SchoolTry Learning Assistant"
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=http://localhost
+
+# Database Configuration
+DB_CONNECTION=sqlite
+DB_DATABASE=/path/to/your/database.sqlite
+
+# AI Configuration
+HUGGINGFACE_API_KEY=your_huggingface_api_key_here
+HUGGINGFACE_MODEL=google/flan-t5-base
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+OPENROUTER_MODEL=openai/gpt-3.5-turbo
+```
+
+## 🧪 Testing
+
+Run the test suite with:
+
+```bash
+php artisan test
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 📧 Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - your.email@example.com
+
+Project Link: [https://github.com/PappyZero/schooltry-edtech](https://github.com/PappyZero/schooltry-edtech)
+
+## 🙏 Acknowledgments
+
+- [Laravel](https://laravel.com)
+- [Vue.js](https://vuejs.org/)
+- [Inertia.js](https://inertiajs.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Hugging Face](https://huggingface.co/)
+- [OpenRouter](https://openrouter.ai/)
