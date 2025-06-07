@@ -139,7 +139,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - your.email@example.com
+Your Name - [@Pappy_Zero](https://x.com/Pappy_Zero)
 
 Project Link: [https://github.com/PappyZero/schooltry-edtech](https://github.com/PappyZero/schooltry-edtech)
 
