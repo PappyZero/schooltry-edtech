@@ -86,7 +86,12 @@ The AI analyzes lesson content and provides contextual, accurate responses to st
    php artisan serve
    ```
 
-9. **Access the application**
+9. **Start the Queue Worker**
+   ```bash
+   php artisan queue:work
+   ```
+
+10. **Access the application**
    Open your browser and visit: `http://localhost:8000`
 
 ## 🔐 Default Admin Account
