@@ -86,7 +86,7 @@ The AI analyzes lesson content and provides contextual, accurate responses to st
    php artisan serve
    ```
 
-9. **Start the Queue Worker**
+9. **Start the Queue Worker in another terminal**
    ```bash
    php artisan queue:work
    ```
